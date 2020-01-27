@@ -1,0 +1,134 @@
+{
+  "products": [
+    {
+      "id": "01",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "S",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "02",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "M",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "03",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "L",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "04",
+      "product": "jeans",
+      "color": "grey",
+      "size": "S",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "05",
+      "product": "jeans",
+      "color": "grey",
+      "size": "M",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "06",
+      "product": "jeans",
+      "color": "grey",
+      "size": "L",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "07",
+      "product": "sneakers",
+      "color": "black",
+      "size": "38",
+      "price": "499",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "08",
+      "product": "sneakers",
+      "color": "black",
+      "size": "40",
+      "price": "499",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "09",
+      "product": "sneakers",
+      "color": "black",
+      "size": "42",
+      "price": "499",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "10",
+      "product": "over coat",
+      "color": "dark brown",
+      "size": "S",
+      "price": "599",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "11",
+      "product": "over coat",
+      "color": "dark brown",
+      "size": "M",
+      "price": "599",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "12",
+      "product": "over coat",
+      "color": "dark brown",
+      "size": "L",
+      "price": "599",
+      "image": "https://placeimg.com/640/480/any"
+    }
+  ],
+  "cart": [
+    {
+      "id": "03",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "L",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "02",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "M",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "01",
+      "product": "t-shirt",
+      "color": "red",
+      "size": "S",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    },
+    {
+      "id": "06",
+      "product": "jeans",
+      "color": "grey",
+      "size": "L",
+      "price": "299",
+      "image": "https://placeimg.com/640/480/any"
+    }
+  ]
+}

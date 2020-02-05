@@ -7,7 +7,6 @@ const adapter = new FileSync('db.json');
 const db = low(adapter);
 const routs = require('./Modules/Routs.js');
 
-
 const initDb = () => {
     let value = db.has('products').value();
     if (!value) {
@@ -17,6 +16,8 @@ const initDb = () => {
 }
 
 routs(app, db);
+
+app.use(express.static('public'))
 
 app.listen(port, () => {
     initDb();

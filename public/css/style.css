@@ -1,0 +1,498 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* elements in both pages*/
+  /**/
+  /* cart stylings */
+}
+
+.wrapper h2 {
+  font-family: 'Roboto Mono', monospace;
+  margin: 2rem;
+  margin-bottom: 6rem;
+}
+
+.wrapper #home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Background.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #home .shopingLink {
+  text-align: center;
+  margin-bottom: 17rem;
+  width: 50%;
+  height: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #home .shopingLink a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .8rem;
+  text-transform: uppercase;
+  background-color: #1016;
+  padding: 1.4rem 2.6rem;
+  border-radius: 4px;
+  font-family: 'Roboto Mono', sans-serif;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.wrapper #home .shopingLink a:hover {
+  background-color: #101;
+}
+
+.wrapper #home .shopingLink .mainQuote {
+  color: #fffe;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.6rem;
+}
+
+.wrapper #home .logo {
+  font-family: 'Monoton', cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.wrapper #home .link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 4rem 2rem;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.wrapper #home nav {
+  width: 100vw;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 3rem;
+  position: relative;
+}
+
+.wrapper #home nav ul {
+  margin-top: 2rem;
+}
+
+.wrapper #home nav #notification {
+  position: absolute;
+  padding: .4rem;
+  top: .8rem;
+  right: 2.2rem;
+  background: red;
+  width: 1rem;
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: .6rem;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper #home .leftQuote {
+  position: absolute;
+  right: 5rem;
+  top: 20rem;
+  font-size: 9rem;
+  color: #000;
+  opacity: .04;
+  font-family: 'Monoton', cursive;
+}
+
+.wrapper #home .arrow {
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.wrapper .prodName {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.wrapper .prodPrice {
+  color: #666;
+}
+
+.wrapper #products {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 6rem 2rem;
+  padding-left: 2rem;
+}
+
+.wrapper #products #prodContainer {
+  width: 100%;
+  padding-left: 20rem;
+  padding-right: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wrapper #products .product {
+  padding: 2rem;
+}
+
+.wrapper #products .product .prodImg {
+  width: 16rem;
+}
+
+.wrapper #products .product article {
+  height: 4rem;
+  width: 100%;
+  padding-top: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper #products .product article .addBtn {
+  border: none;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .6rem 1rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  background: #000;
+  border-radius: 2px;
+  opacity: .8;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.wrapper #products .product article .addBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.wrapper #about {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.wrapper #about h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 4rem;
+}
+
+.wrapper #about p {
+  width: 70%;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+}
+
+.wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+.wrapper header h1 {
+  text-transform: uppercase;
+}
+
+.wrapper main {
+  min-height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.wrapper main .right {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 30vh;
+  width: 30vw;
+}
+
+.wrapper main .right h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.wrapper main .right p {
+  width: 80%;
+  line-height: 1.6rem;
+}
+
+.wrapper main .right article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper main .right article span {
+  color: #666;
+}
+
+.wrapper main .right .delivery {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: auto;
+  border: none;
+  color: #fff;
+  font-size: .8rem;
+  padding: .6rem 1rem;
+  background: #000;
+  border-radius: 2px;
+  opacity: .8;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  text-transform: uppercase;
+}
+
+.wrapper main .right .delivery:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.wrapper main .left {
+  height: 100%;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wrapper main .left .cartProd {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.4rem 0rem;
+}
+
+.wrapper main .left .cartProd .prodName, .wrapper main .left .cartProd .prodPrice {
+  margin-left: 1rem;
+  padding-bottom: .4rem;
+}
+
+.wrapper main .left .cartProd img {
+  width: 8rem;
+}
+
+.wrapper main .left .cartProd .deleteBtn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: auto;
+  border: none;
+  color: #fff;
+  font-size: .8rem;
+  padding: .6rem 1rem;
+  background: #dd0f0f;
+  border-radius: 2px;
+  opacity: .8;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.wrapper main .left .cartProd .deleteBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.wrapper footer {
+  width: 100%;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem;
+  margin: 2rem 0rem;
+}
+
+.wrapper footer section {
+  width: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+.wrapper footer section h3 {
+  text-transform: uppercase;
+}
+
+.wrapper footer a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  background: #000;
+  border-radius: 4px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  opacity: .9;
+}
+
+.wrapper footer a:hover {
+  opacity: 1;
+}
+
+.wrapper footer #back {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=style.css.map */

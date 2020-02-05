@@ -3,14 +3,14 @@ module.exports = (app, db) => {
     // Getting objects 
 
     const getObj = obj => {
-        let objToFind = { product: obj.name, size: obj.size, color: obj.color }
+        let objToFind = { id: obj.id }
         let objToAdd = db.get('products').find(objToFind).value();
 
         return objToAdd;
     }
 
     const getObjFromCart = obj => {
-        let objToFind = { product: obj.name, size: obj.size, color: obj.color }
+        let objToFind = { id: obj.id }
         let objToAdd = db.get('cart').find(objToFind).value();
 
         return objToAdd;
@@ -19,7 +19,7 @@ module.exports = (app, db) => {
     // Adding to cart
 
     const addToCart = (obj, res) => {
-        let value = db.get('cart').find({ product: obj.product, size: obj.size }).value();
+        let value = db.get('cart').find({ product: obj.product, id: obj.id }).value();
         let errorMssg = {
             status: 'Error',
             message: 'Object already in shopping cart'

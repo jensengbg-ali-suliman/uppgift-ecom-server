@@ -389,5 +389,24 @@ html{
         }
     }
 
+
+    .checked{
+        position: relative;
+
+        &::after{
+          content: 'In shopingbag';
+          text-transform: uppercase;
+          position: absolute;
+          top: 0rem;
+          right: 0rem;
+          padding: .6rem 1.4rem;
+          margin: 2rem;
+          background: red;  
+          color: #fff;
+          font-weight: bold;
+          font-size: .8rem;
+        }
+    }
+
 }
 

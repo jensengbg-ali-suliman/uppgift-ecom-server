@@ -75,21 +75,15 @@
   ],
   "cart": [
     {
-      "id": "04",
-      "product": "bracelet",
+      "id": "06",
+      "product": "chinos",
       "price": "299",
       "image": "https://placeimg.com/640/480/any"
     },
     {
-      "id": "02",
-      "product": "glasses",
-      "price": "299",
-      "image": "https://placeimg.com/640/480/any"
-    },
-    {
-      "id": "01",
-      "product": "t-shirt",
-      "price": "299",
+      "id": "08",
+      "product": "boots",
+      "price": "499",
       "image": "https://placeimg.com/640/480/any"
     }
   ]

@@ -7,6 +7,46 @@ const getButtons = () => {
     addFunction(arr, itemCount)
 }
 
+const markHtmlElem = ids => {
+
+    let elemArr = document.querySelectorAll('.product');
+
+    for (let i = 0; i < ids.length; i++) {
+        for (let j = 0; j < elemArr.length; j++) {
+            if (ids[i] === elemArr[j].id) {
+                elemArr[j].classList.add('checked');
+            }
+        }
+    }
+}
+
+const consoleFunc = (cartArr, prodArr) => {
+
+    let ids = [];
+
+    for (let i = 0; i < cartArr.length; i++) {
+        for (let j = 0; j < prodArr.length; j++) {
+            if (cartArr[i].id === prodArr[j].id) {
+                ids.push(cartArr[i].id);
+            }
+        }
+    }
+
+    markHtmlElem(ids);
+
+}
+
+const checkFunc = data => {
+
+    let url = 'http://localhost:8000/cart/getAll';
+
+    fetch(url, { method: 'GET' })
+        .then(res => res.json())
+        .then(cartData => consoleFunc(cartData, data))
+        .catch(err => console.error(err))
+
+}
+
 const createHmtlElement = data => {
     data.map(prod => {
 
@@ -43,6 +83,7 @@ const createHmtlElement = data => {
     });
 
     getButtons();
+    checkFunc(data);
 }
 
 const getProductList = () => {

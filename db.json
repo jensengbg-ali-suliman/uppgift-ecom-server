@@ -75,15 +75,15 @@
   ],
   "cart": [
     {
-      "id": "06",
-      "product": "chinos",
+      "id": "03",
+      "product": "necklace",
       "price": "299",
       "image": "https://placeimg.com/640/480/any"
     },
     {
-      "id": "08",
-      "product": "boots",
-      "price": "499",
+      "id": "02",
+      "product": "glasses",
+      "price": "299",
       "image": "https://placeimg.com/640/480/any"
     }
   ]
